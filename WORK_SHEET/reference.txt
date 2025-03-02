@@ -1,0 +1,11 @@
+dokumentasi sequelize:
+https://sequelize.org/docs/v6/core-concepts/model-instances/
+
+Building a PostgreSQL API in JavaScript with Express and Sequelize
+url: https://medium.com/nerd-for-tech/june-22-building-a-postgresql-api-in-javascript-with-express-and-sequelize-part-2-57a166814545
+
+Membuat RESTful API Dengan Express.js, Sequelize.js dan PostgreSQL
+url: https://medium.com/@nico26deo/membuat-restful-api-dengan-express-js-sequelize-js-dan-postgresql-cb14d045cefd
+
+JavaScript CRUD Rest API using Nodejs, Express, Sequelize, Postgres, Docker and Docker Compose
+url: https://dev.to/francescoxx/build-a-crud-rest-api-in-javascript-using-nodejs-express-postgres-docker-jkb

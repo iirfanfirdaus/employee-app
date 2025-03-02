@@ -1,0 +1,706 @@
+{
+	"info": {
+		"_postman_id": "8bd79c46-b6e8-4ecd-8f93-5c965cf5400b",
+		"name": "DATA KEPEGAWAIAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4163348"
+	},
+	"item": [
+		{
+			"name": "EMPLOYEE",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nik",
+									"value": "11014",
+									"description": "string",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Irfan F",
+									"description": "string",
+									"type": "text"
+								},
+								{
+									"key": "is_active",
+									"value": "true",
+									"description": "boolean",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2025-01-01",
+									"description": "format 'YYYY-MM-DD'",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2027-12-31",
+									"description": "format 'YYYY-MM-DD'",
+									"type": "text"
+								},
+								{
+									"key": "prof_pict",
+									"description": "image jpg, jpeg, png",
+									"type": "file",
+									"src": "/C:/Users/bsppc/OneDrive/Documents/SAMPLE FILE/test/Screenshot 2025-02-11 160712.png"
+								},
+								{
+									"key": "gender",
+									"value": "Laki-Laki",
+									"description": "enum",
+									"type": "text"
+								},
+								{
+									"key": "place_of_birth",
+									"value": "Bandung",
+									"description": "String",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "1996-05-15",
+									"description": "format 'YYYY-MM-DD'",
+									"type": "text"
+								},
+								{
+									"key": "is_married",
+									"value": "false",
+									"description": "boolean",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "[\n   {\n      \"name\": \"TK Al Kautsar\", \n      \"level\": \"TK\",\n      \"description\" : \"TK\"\n   },\n   {\n      \"name\": \"SDN SUKAPURA 4\", \n      \"level\": \"SD\",\n      \"description\" : \"SD\"\n   }\n]",
+									"description": "array object (optional)",
+									"type": "text"
+								},
+								{
+									"key": "family",
+									"value": "[\n   {\n      \"name\": \"Ani Surani\", \n      \"identifier\": \"11111111112\",\n      \"job\" : \"Ibu RUmah Tangga\",\n      \"place_of_birth\": \"Bandung\",\n      \"date_of_birth\": \"1997-01-20\",\n      \"religion\": \"Islam\",\n      \"is_life\": \"true\",\n      \"is_divorced\": \"false\",\n      \"relation_status\": \"Istri\"\n   },\n   {\n      \"name\": \"Budi\", \n      \"identifier\": \"11111111113\",\n      \"job\" : \"Pelajar\",\n      \"place_of_birth\": \"Bandung\",\n      \"date_of_birth\": \"2010-01-20\",\n      \"religion\": \"Islam\",\n      \"is_life\": \"true\",\n      \"is_divorced\": \"false\",\n      \"relation_status\": \"Anak\"\n   }\n]",
+									"description": "array object (optional)",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/employee",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nik",
+									"value": "11014",
+									"description": "string",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Irfan F F",
+									"description": "string",
+									"type": "text"
+								},
+								{
+									"key": "is_active",
+									"value": "true",
+									"description": "boolean",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2025-01-01",
+									"description": "format 'YYYY-MM-DD'",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2027-01-31",
+									"description": "format 'YYYY-MM-DD'",
+									"type": "text"
+								},
+								{
+									"key": "prof_pict",
+									"description": "image jpg, jpeg, png",
+									"type": "file",
+									"src": "/C:/Users/bsppc/OneDrive/Documents/SAMPLE FILE/test/Screenshot 2025-02-11 160712.png",
+									"disabled": true
+								},
+								{
+									"key": "gender",
+									"value": "Laki-Laki",
+									"description": "enum",
+									"type": "text"
+								},
+								{
+									"key": "place_of_birth",
+									"value": "Bandung",
+									"description": "String",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "1996-05-15",
+									"description": "format 'YYYY-MM-DD'",
+									"type": "text"
+								},
+								{
+									"key": "is_married",
+									"value": "false",
+									"description": "boolean",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/employee/:employee_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								":employee_id"
+							],
+							"variable": [
+								{
+									"key": "employee_id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/employee/:employee_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								":employee_id"
+							],
+							"variable": [
+								{
+									"key": "employee_id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/employee/:employee_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								":employee_id"
+							],
+							"variable": [
+								{
+									"key": "employee_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/employee?page=1&per_page=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "order_by",
+									"value": "name",
+									"disabled": true
+								},
+								{
+									"key": "dir",
+									"value": "desc",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Jarot",
+									"disabled": true
+								},
+								{
+									"key": "nik",
+									"value": "11013",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "report",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/employee/report",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"report"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "per_page",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "order_by",
+									"value": "name",
+									"disabled": true
+								},
+								{
+									"key": "dir",
+									"value": "desc",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Jarot",
+									"disabled": true
+								},
+								{
+									"key": "nik",
+									"value": "11013",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "EDUCATION",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SMP Negeri 31 Bandung\", \r\n    \"level\": \"SMP\",\r\n    \"description\" : \"Sekolah Menengah Pertama\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/employee-education/:employee_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee-education",
+								":employee_id"
+							],
+							"variable": [
+								{
+									"key": "employee_id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SMP Negeri 31 Bandung Update\", \r\n    \"level\": \"SMP\",\r\n    \"description\" : \"Sekolah Menengah Pertama\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/employee-education/:employee_id/:education_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee-education",
+								":employee_id",
+								":education_id"
+							],
+							"variable": [
+								{
+									"key": "employee_id",
+									"value": "10"
+								},
+								{
+									"key": "education_id",
+									"value": "16"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/employee-education/:employee_id/:education_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee-education",
+								":employee_id",
+								":education_id"
+							],
+							"variable": [
+								{
+									"key": "employee_id",
+									"value": "10"
+								},
+								{
+									"key": "education_id",
+									"value": "16"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "FAMILY",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Robi Tantowi\", \r\n    \"identifier\": \"11111111113\",\r\n    \"job\" : \"Pelajar\",\r\n    \"place_of_birth\": \"Bandung\",\r\n    \"date_of_birth\": \"2001-09-22\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": \"true\",\r\n    \"is_divorced\": \"false\",\r\n    \"relation_status\": \"Anak\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/employee-family/:employee_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee-family",
+								":employee_id"
+							],
+							"variable": [
+								{
+									"key": "employee_id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Robi Tantowi Update\", \r\n    \"identifier\": \"11111111113\",\r\n    \"job\" : \"Pelajar\",\r\n    \"place_of_birth\": \"Bandung\",\r\n    \"date_of_birth\": \"2001-09-22\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": \"true\",\r\n    \"is_divorced\": \"false\",\r\n    \"relation_status\": \"Anak\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/employee-family/:employee_id/:family_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee-family",
+								":employee_id",
+								":family_id"
+							],
+							"variable": [
+								{
+									"key": "employee_id",
+									"value": "10"
+								},
+								{
+									"key": "family_id",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/employee-family/:employee_id/:family_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee-family",
+								":employee_id",
+								":family_id"
+							],
+							"variable": [
+								{
+									"key": "employee_id",
+									"value": "10"
+								},
+								{
+									"key": "family_id",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,8 @@
+**/node_modules
+**/coverage
+**/.env
+**/.env.stg
+**/.env.prod
+**/.log
+**/public/*
+**/static/*
